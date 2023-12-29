@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            background: pink;
+            width: 300px;
+            height: 300px;
+            overflow: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #test{
+            background-color: blue;
+            width: 600px;
+            height: 100px;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript scrollWidth & scrollHeight</h2>
+
+    <div id="box">  
+        <div id="test"></div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et sagittis urna, vel ornare odio. Donec quis massa pretium purus vestibulum ullamcorper. Vivamus vestibulum nunc nisi, in fringilla tortor elementum quis. Nullam interdum dictum tempus. Donec sed scelerisque velit, ut laoreet enim. Morbi accumsan ex a quam tincidunt, vitae scelerisque lorem aliquet. Sed blandit bibendum nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis porttitor, ante blandit fermentum gravida, nisi tortor suscipit risus, eget sodales turpis eros at dolor. Aenean a venenatis lorem, ac vulputate est. Ut metus enim, eleifend sed finibus sed, varius lobortis ipsum. Aenean congue aliquet cursus. Praesent eu aliquet turpis, et tempus massa. Suspendisse gravida nisl at orci gravida pulvinar. Duis sit amet nibh ac mauris cursus finibus non ut arcu. Sed quis elit in sem pharetra maximus.
+
+        Aliquam non elit eget metus maximus placerat posuere eget purus. Etiam eu auctor ex. Sed rutrum magna non hendrerit mollis. Aenean arcu ipsum, condimentum ut leo at, euismod gravida quam. Cras pulvinar urna in lacus fermentum hendrerit. Maecenas bibendum dictum leo at luctus. Sed aliquet tortor ut libero pretium, quis volutpat lacus venenatis. Suspendisse congue faucibus augue et vestibulum. Aenean laoreet neque sit amet enim varius facilisis. Curabitur id turpis sed leo consectetur scelerisque ac eget ante. Duis tempus odio eu lectus imperdiet tristique. Nunc ac pellentesque justo, non placerat turpis.
+        
+        Suspendisse vitae hendrerit erat. Suspendisse sapien libero, facilisis quis tincidunt ac, porta et enim. Phasellus cursus lectus porta rhoncus facilisis. Suspendisse et egestas massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque id arcu et mauris sollicitudin viverra. Nunc laoreet augue tellus, ut blandit ligula molestie et. In pellentesque mi nec ante ultrices, sed congue libero suscipit. Aliquam commodo arcu non velit dictum sagittis. Cras finibus dictum leo, a blandit urna condimentum et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non lacus suscipit quam accumsan dignissim faucibus et mi. Fusce sed ipsum tellus.
+        
+        Praesent vulputate elementum est quis pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu cursus nunc. Aenean ut porttitor erat. Vestibulum pellentesque odio ut diam malesuada, ut condimentum enim convallis. In pretium velit est, et pulvinar sem commodo vel. Phasellus tempus dui eu velit hendrerit mattis. Phasellus sodales convallis odio, in aliquet sapien gravida vel. Nunc placerat volutpat congue. Vivamus at velit neque. Ut pharetra id ante nec dignissim. Donec laoreet massa arcu, a rutrum nibh finibus nec. Aliquam eleifend sapien enim, non consequat justo aliquam vitae. Nunc diam erat, varius eu leo sit amet, ultricies tincidunt lorem.
+        
+        Nullam eget purus dui. Ut aliquet vehicula quam, at scelerisque enim egestas sed. Mauris porttitor orci vitae neque posuere, sit amet malesuada felis elementum. Aenean dictum porta consectetur. Morbi eleifend purus in nibh viverra bibendum. Ut vulputate nulla sed tortor tempus dapibus. Praesent ac magna nisl. Sed metus enim, consectetur eget consectetur laoreet, fermentum nec erat. Proin quis dolor in ex feugiat scelerisque.
+        
+        Ut semper, velit faucibus egestas varius, velit justo condimentum risus, ut eleifend enim urna quis enim. Sed lectus arcu, venenatis in sodales eu, faucibus eu eros. Nullam varius, sem et bibendum gravida, risus velit porttitor leo, at blandit nibh nibh feugiat lacus. Nulla sollicitudin, elit sed blandit finibus, dui erat facilisis erat, nec accumsan nisl sem non urna. In a odio ac eros hendrerit aliquet sit amet id libero. Curabitur facilisis faucibus leo, nec aliquet massa euismod a. Vestibulum iaculis ultrices arcu vitae semper. Etiam blandit enim turpis, non pharetra tortor placerat sed. Fusce arcu leo, pellentesque sit amet diam id, convallis.
+        
+        
+    </div>
+
+    <script>
+        const target = document.querySelector("#box");
+
+        var scroll_width = target.scrollWidth;
+        var scroll_height = target.scrollHeight;
+
+        var scroll_Width = target.scrollWidth;
+
+        console.log("Scroll Width : " + scroll_width);
+        console.log("Scroll Height : " + scroll_height);
+
+    </script>
+</body>
+</html>

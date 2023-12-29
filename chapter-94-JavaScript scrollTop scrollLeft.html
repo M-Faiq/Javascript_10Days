@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+     #box{
+        background: pink;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        overflow: auto;
+     }
+     #test{
+        background:lightgreen ;
+        width: 1000px;
+        height: 200px;
+     }
+
+    </style>
+</head>
+<body>
+    <h2>JavaScript scrollTop &  scrollLeft</h2>
+    <div id="box">
+        <div id="test"></div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id porttitor elit. Donec bibendum nec sem in laoreet. Cras ornare mi sed porttitor lacinia. Phasellus tincidunt mauris nunc, porta tincidunt neque scelerisque eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce non ligula convallis, posuere quam eget, porttitor lectus. Sed vel vehicula tortor, ac volutpat justo. Cras ut dui lacinia, iaculis odio nec, pharetra nibh. Donec finibus, quam nec feugiat semper, erat ipsum faucibus nulla, nec facilisis purus felis a sem.
+
+        Donec cursus mauris in venenatis luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consequat ex ac pharetra lacinia. In tempus lectus a ligula gravida suscipit et ut risus. Fusce mollis dolor nunc, sed ullamcorper nunc congue vitae. Fusce imperdiet ullamcorper ligula, sit amet porttitor mauris sollicitudin pretium. Nam quis bibendum orci.
+        
+        Morbi suscipit, sapien at ultricies fermentum, odio sapien facilisis odio, id condimentum tellus justo et velit. Cras varius orci at aliquam dapibus. Donec laoreet egestas felis et lacinia. Donec mattis nibh sed vulputate blandit. Aliquam imperdiet nisi sed dictum vestibulum. Suspendisse finibus purus laoreet ipsum tempus condimentum. Integer imperdiet diam mauris. Quisque non mi mauris.
+        
+        Donec dignissim ultrices rhoncus. Etiam et maximus ante, sit amet hendrerit libero. Donec eleifend lorem et turpis dictum, id mattis turpis interdum. Duis ac orci dolor. Praesent laoreet eu magna eu consequat. In ac iaculis sapien. Curabitur dignissim, leo nec rhoncus consequat, nisl eros bibendum nisi, ac interdum sem dui fermentum felis.
+        
+        In quis aliquet nulla, eu convallis orci. In eget justo tellus. Praesent non magna nec justo facilisis volutpat in nec massa. Etiam vitae est ut dui venenatis cursus. Praesent vel arcu et dolor sollicitudin aliquet id vitae eros. Curabitur neque nulla, fringilla vel hendrerit aliquet, consectetur a nisl. Suspendisse tempor hendrerit nisl, sed pellentesque ante porta vel. Proin eget felis nec sapien suscipit tempus. Pellentesque cursus mi nulla, ac malesuada nisi ullamcorper eu. Donec diam diam, cursus id lacus egestas, facilisis pellentesque felis. Cras non felis scelerisque, euismod risus sit amet, imperdiet eros. Quisque cursus aliquam turpis id condimentum. Fusce at tortor ac nunc tempor posuere sed eget mauris. Duis consectetur leo sit amet turpis laoreet, ac tristique ipsum pretium. Donec sodales tortor in lectus cursus semper.
+        
+        Nam eu tortor congue, semper justo et, porttitor lectus. Nunc volutpat orci sed massa tempus, eget tristique purus sodales. Nam sit amet consectetur massa, vel ultricies nisi. Aliquam ac purus volutpat, ullamcorper nunc eget, rhoncus ex. Sed ultrices purus eget augue dapibus aliquam. Quisque nec risus finibus lacus consectetur commodo. Quisque vel tempor enim. Fusce id lectus nisi. Aliquam ultrices egestas viverra. Nunc faucibus tellus non posuere fringilla. Duis fringilla nisi leo. Cras finibus tincidunt sapien, sed mollis quam interdum non. Ut leo nisi, mattis ut sollicitudin nec, dapibus ac lectus. Mauris faucibus maximus nulla vel bibendum.
+        
+        Cras scelerisque commodo ultrices. Vivamus eleifend leo eu nunc tincidunt, eu ullamcorper arcu viverra. Suspendisse molestie arcu quis velit suscipit porttitor sit amet ac massa. Curabitur aliquam magna.
+        
+        Genera</div>
+
+    <script>
+
+     const target = document.querySelector("#box");
+
+     target.addEventListener('scroll' ,() => {
+
+        console.clear();
+
+        console.log("scrollTop : " + target.scrollTop);
+        console.log("scrollLeft : " + target.scrollLeft);
+
+     });
+
+    </script>
+</body>
+</html>
